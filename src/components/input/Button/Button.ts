@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { MouseEvent, SFC } from 'react';
 
-const Button = ({ onClick: handleClick, children }) = (
+type Props = { onClick(e: MouseEvent<HTMLElement>): void }
+
+const Button: SFC<Props> = ({ onClick: handleClick, children }) = (
   <button onClick={handleClick}>{children}</button>
 );
