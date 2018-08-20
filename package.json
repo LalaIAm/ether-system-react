@@ -13,7 +13,7 @@
     "url": "git+https://github.com/wearethescenery/ether-system-react.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/wearethescenery/ether-system-react/issues"
   },
@@ -23,6 +23,11 @@
     "react-dom": "^16.4.2"
   },
   "devDependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "react-styleguidist": "^7.2.4",
     "webpack": "^4.16.5"
   }
