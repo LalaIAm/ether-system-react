@@ -15,5 +15,11 @@
   "bugs": {
     "url": "https://github.com/wearethescenery/ether-system-react/issues"
   },
-  "homepage": "https://github.com/wearethescenery/ether-system-react#readme"
+  "homepage": "https://github.com/wearethescenery/ether-system-react#readme",
+  "dependencies": {
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7",
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2"
+  }
 }
