@@ -4,6 +4,8 @@
   "description": "A React version of the Ether System libraries",
   "main": "index.js",
   "scripts": {
+    "styleguide": "styleguidist server",
+    "styleguide:build": "styleguidist build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -17,9 +19,13 @@
   },
   "homepage": "https://github.com/wearethescenery/ether-system-react#readme",
   "dependencies": {
-    "@types/react": "^16.4.11",
-    "@types/react-dom": "^16.0.7",
     "react": "^16.4.2",
     "react-dom": "^16.4.2"
+  },
+  "devDependencies": {
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.7",
+    "react-styleguidist": "^7.2.4",
+    "webpack": "^4.16.5"
   }
 }
