@@ -20,7 +20,8 @@
   "homepage": "https://github.com/wearethescenery/ether-system-react#readme",
   "dependencies": {
     "react": "^16.4.2",
-    "react-dom": "^16.4.2"
+    "react-dom": "^16.4.2",
+    "styled-components": "^3.4.2"
   },
   "devDependencies": {
     "babel-core": "^6.26.3",
