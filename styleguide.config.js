@@ -1,3 +1,3 @@
 module.exports = {
-  components: 'src/components/**/[A-Z]*.js' //skips index.js
-}
+  components: 'src/components/**/[A-Z]*.{js,jsx,ts,tsx}', // skips index.js
+};
