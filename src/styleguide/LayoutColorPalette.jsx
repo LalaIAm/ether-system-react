@@ -1,6 +1,17 @@
-import PropTypes from 'prop-types';
 import React from 'react';
 
+import colors from '../base/color/colors';
+import { ColorSwatch } from './components/ColorSwatch';
+
 export const LayoutColorPalette = () => {
-  return <div>Hello</div>;
+  // console.log(colors);
+
+  const renderColorSwatches = Object.entries(colors).map((color) => {
+    console.log(color);
+
+  });
+
+  return (
+    <ColorSwatch />
+  );
 };

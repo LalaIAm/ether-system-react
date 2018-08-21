@@ -10,8 +10,6 @@ module.exports = {
       name: 'Colors',
       content: 'docs/colors.md',
       description: 'These are colors from the Ether Color System',
-      components: 'src/styleguide/*.{js,jsx,ts,tsx}',
-      ignore: 'src/styleguide/base/**/ColorSwatch.jsx',
     },
     {
       name: 'Input Components',
