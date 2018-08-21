@@ -31,4 +31,4 @@ Button.propTypes = {
 Button.defaultProps = {
   onClick: () => {},
   size: 'medium',
-}
+};
