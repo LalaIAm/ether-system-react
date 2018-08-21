@@ -4,6 +4,7 @@
   "description": "A React version of the Ether System libraries",
   "main": "index.js",
   "scripts": {
+    "start": "npm run styleguide",
     "styleguide": "styleguidist server",
     "styleguide:build": "styleguidist build",
     "test": "echo \"Error: no test specified\" && exit 1"
