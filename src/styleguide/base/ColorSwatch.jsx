@@ -1,18 +1,23 @@
 import PropTypes from 'prop-types';
 import React from 'react';
+import styled from 'styled-components';
+
+const StyledSwatch = styled.div`
+  padding: 10px;
+`;
 
 export const ColorSwatch = ({ height, name, value, width }) => {
   const swatchStyles = {
-    backgroundColor: 'green',
+    backgroundColor: value,
     height: `${height}px`,
     width: `${width}px`,
   };
 
   return (
-    <div style={swatchStyles}>
+    <StyledSwatch style={swatchStyles}>
       <p>{name}</p>
       <p>{value}</p>
-    </div>
+    </StyledSwatch>
   );
 };
 
