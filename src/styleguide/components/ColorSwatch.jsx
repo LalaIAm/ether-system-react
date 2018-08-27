@@ -3,6 +3,8 @@ import React from 'react';
 import styled from 'styled-components';
 import Color from 'color';
 
+import colors from '../../base/color/colors';
+
 const StyledSwatch = styled.div`
   box-sizing: border-box;
   padding: 10px;
@@ -10,8 +12,8 @@ const StyledSwatch = styled.div`
 `;
 
 const StyledSwatchTitle = styled.span`
-  background-color: #FFF;
-  color: #333;
+  background-color: ${colors.white};
+  color: ${colors.dark};
   display: inline-block;
   font-size: 11px;
   font-weight: 700;

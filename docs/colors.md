@@ -1,4 +1,4 @@
-### These Are Colors 🎨
+### Available color values 🎨
 
 ```js noeditor
 const { LayoutColorPalette } = require('../src/styleguide/LayoutColorPalette');
