@@ -9,7 +9,6 @@ export const Button = ({ children, mode, onClick }) => (
 
 export const ButtonModes = ['primary', 'secondary', 'warning', 'success', 'info'];
 
-/** @component */
 Button.propTypes = {
   /** Content to be rendered inside a Button */
   children: PropTypes.node,

@@ -38,6 +38,8 @@ jspm_packages/
 
 # Builds
 dist/
+styleguide/
+lib/
 
 # TypeScript v1 declaration files
 typings/

@@ -1,0 +1,10 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render without issue 1`] = `
+<styled.button
+  mode="primary"
+  onClick={[Function]}
+>
+  Hello
+</styled.button>
+`;
