@@ -1,5 +1,6 @@
 module.exports = {
   components: 'src/components/**/[A-Z]*.{js,jsx,ts,tsx}', // skips index.js
+  ignore: ['**/**/Styles.{js,jsx,ts,tsx}'],
   pagePerSection: true,
   sections: [
     {
@@ -13,7 +14,7 @@ module.exports = {
     },
     {
       name: 'Input Components',
-      components: 'src/components/input/**/[A-Z]*.jsx',
+      components: 'src/components/input/**/[A-Z]*.{js,jsx}',
     },
   ],
 };
