@@ -8,7 +8,7 @@ import colors from '../../base/color/colors';
 const StyledSwatch = styled.div`
   box-sizing: border-box;
   padding: 10px;
-  width: 100%;
+  width: 50%;
 `;
 
 const StyledSwatchTitle = styled.span`
