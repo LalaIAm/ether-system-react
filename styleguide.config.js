@@ -13,6 +13,11 @@ module.exports = {
       description: 'These are colors from the Ether Color System',
     },
     {
+      name: 'Color Variables',
+      content: 'docs/colorVariables.md',
+      description: 'These are the available Color Variables from the Ether Color System',
+    },
+    {
       name: 'Input Components',
       components: 'src/components/input/**/[A-Z]*.{js,jsx}',
     },

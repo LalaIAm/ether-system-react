@@ -16,7 +16,7 @@ export const LayoutColorPalette = () => {
     const [name, value] = color;
 
     return (
-      <ColorSwatch name={name} value={value} />
+      <ColorSwatch key={name} name={name} value={value} />
     );
   });
 
