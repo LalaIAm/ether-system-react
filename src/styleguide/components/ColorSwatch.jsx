@@ -1,11 +1,12 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 import styled from 'styled-components';
+import Color from 'color';
 
 const StyledSwatch = styled.div`
   box-sizing: border-box;
   padding: 10px;
-  width: 50%;
+  width: 100%;
 `;
 
 const StyledSwatchTitle = styled.span`
@@ -22,18 +23,21 @@ const StyledSwatchSubtitle = styled(StyledSwatchTitle)`
   font-size: 10px;
 `;
 
-export const ColorSwatch = ({ height, name, value, width }) => {
+export const ColorSwatch = ({ height, name, value }) => {
   const swatchStyles = {
     backgroundColor: value,
     height,
-    width,
   };
+
+  const rgbValue = Color(value).rgb().string();
 
   return (
     <StyledSwatch style={swatchStyles}>
       <StyledSwatchTitle>{name}</StyledSwatchTitle>
       <br />
       <StyledSwatchSubtitle>{value}</StyledSwatchSubtitle>
+      <br />
+      <StyledSwatchSubtitle>{rgbValue}</StyledSwatchSubtitle>
     </StyledSwatch>
   );
 };
@@ -42,10 +46,8 @@ ColorSwatch.propTypes = {
   height: PropTypes.string,
   name: PropTypes.string,
   value: PropTypes.string,
-  width: PropTypes.string,
 };
 
 ColorSwatch.defaultProps = {
-  height: '180px',
-  width: '50%',
+  height: '160px',
 };
