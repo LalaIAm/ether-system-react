@@ -13,7 +13,7 @@ module.exports = {
     },
     {
       name: 'Input Components',
-      components: 'src/components/input/**/[A-Z]*.{js,jsx,ts,tsx}',
+      components: 'src/components/input/**/[A-Z]*.jsx',
     },
   ],
 };
