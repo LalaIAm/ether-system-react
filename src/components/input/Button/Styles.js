@@ -1,31 +1,31 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 
 import colorVariables from '../../../base/color/colorVariables';
 
 export const buttonModeStyles = {
-  primary: {
-    backgroundColor: colorVariables.buttonPrimaryBackground,
-    backgroundColorHover: colorVariables.buttonPrimaryBackgroundHover,
-    borderColor: colorVariables.buttonPrimaryBorder,
-    color: colorVariables.buttonPrimaryText,
-  },
-  secondary: {
-    backgroundColor: colorVariables.buttonSecondaryBackground,
-    backgroundColorHover: colorVariables.buttonSecondaryBackgroundHover,
-    borderColor: colorVariables.buttonSecondaryBorder,
-    color: colorVariables.buttonSecondaryText,
-  },
+  primary: css`
+    background-color: ${colorVariables.buttonPrimaryBackground};
+    border: 1px solid ${colorVariables.buttonPrimaryBorder};
+    color: ${colorVariables.buttonPrimaryText};
+
+    &:hover {
+      background-color: ${colorVariables.buttonPrimaryBackgroundHover};
+    }
+  `,
+  secondary: css`
+    background-color: ${colorVariables.buttonSecondaryBackground};
+    border: 1px solid ${colorVariables.buttonSecondaryBorder};
+    color: ${colorVariables.buttonSecondaryText};
+
+    &:hover {
+      background-color: ${colorVariables.buttonSecondaryBackgroundHover};
+    }
+  `,
 };
 
 export const StyledButton = styled.button`
-  background-color: ${p => buttonModeStyles[p.mode].backgroundColor};
-  border: 1px solid ${p => buttonModeStyles[p.mode].borderColor};
+  ${p => buttonModeStyles[p.mode]};
   border-radius: 3px;
-  color: ${p => buttonModeStyles[p.mode].color};
   cursor: pointer;
   padding: 9px 12px;
-
-  &:hover {
-    background-color: ${p => buttonModeStyles[p.mode].backgroundColorHover};
-  }
 `;
