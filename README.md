@@ -8,5 +8,5 @@ A React version of the Ether System libraries
 
 # Development
 
-* `npm run styleguide` will run React Styleguidist at [localhost:6060](http://localhost:6060)
+* `npm start` will run React Styleguidist at [localhost:6060](http://localhost:6060)
 * `npm run styleguide:build` will create a static version for serving

@@ -1,3 +1,9 @@
-```js { "props": { "children": "Hello" } }
-<Button size="large">Push Me</Button>
+### Primary Button
+```js
+<Button>Button</Button>
+```
+
+### Secondary Button
+```js
+<Button mode="secondary">Button</Button>
 ```
