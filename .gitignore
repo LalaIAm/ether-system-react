@@ -38,7 +38,7 @@ jspm_packages/
 
 # Builds
 dist/
-styleguide/
+/styleguide
 lib/
 
 # TypeScript v1 declaration files

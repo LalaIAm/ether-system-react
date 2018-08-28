@@ -1,6 +1,6 @@
 module.exports = {
   components: 'src/components/**/[A-Z]*.{js,jsx,ts,tsx}', // skips index.js
-  ignore: ['**/**/Styles.{js,jsx,ts,tsx}'],
+  ignore: ['**/**/Styles.{js,jsx,ts,tsx}', '**/*.spec.{js,jsx,ts,tsx}'],
   pagePerSection: true,
   sections: [
     {
@@ -10,16 +10,25 @@ module.exports = {
     {
       name: 'Colors',
       content: 'docs/colors.md',
-      description: 'These are colors from the Ether Color System',
+      description: 'The Ether Color System',
     },
     {
       name: 'Color Variables',
       content: 'docs/colorVariables.md',
-      description: 'These are the available Color Variables from the Ether Color System',
+      description: 'Available Color Variables from the Ether Color System',
+    },
+    {
+      name: 'Spacers',
+      content: 'docs/spacers.md',
+      description: 'The Ether Spacing System',
     },
     {
       name: 'Input Components',
       components: 'src/components/input/**/[A-Z]*.{js,jsx}',
+    },
+    {
+      name: 'Layout Components',
+      components: 'src/components/layout/**/[A-Z]*.{js,jsx}',
     },
   ],
 };

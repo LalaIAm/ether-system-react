@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Color from 'color';
 
-import colors from '../../base/color/colors';
+import colors from '../base/color/colors';
 
 const StyledSwatch = styled.div`
   box-sizing: border-box;
@@ -11,7 +11,7 @@ const StyledSwatch = styled.div`
   width: 50%;
 `;
 
-const StyledSwatchTitle = styled.span`
+const StyledTitle = styled.span`
   background-color: ${colors.white};
   color: ${colors.dark};
   display: inline-block;
@@ -21,7 +21,7 @@ const StyledSwatchTitle = styled.span`
   padding: 8px;
 `;
 
-const StyledSwatchSubtitle = styled(StyledSwatchTitle)`
+const StyledSubtitle = styled(StyledTitle)`
   font-size: 10px;
 `;
 
@@ -35,11 +35,11 @@ export const ColorSwatch = ({ height, name, value }) => {
 
   return (
     <StyledSwatch style={swatchStyles}>
-      <StyledSwatchTitle>{name}</StyledSwatchTitle>
+      <StyledTitle>{name}</StyledTitle>
       <br />
-      <StyledSwatchSubtitle>{value}</StyledSwatchSubtitle>
+      <StyledSubtitle>{value}</StyledSubtitle>
       <br />
-      <StyledSwatchSubtitle>{rgbValue}</StyledSwatchSubtitle>
+      <StyledSubtitle>{rgbValue}</StyledSubtitle>
     </StyledSwatch>
   );
 };

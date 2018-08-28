@@ -1,3 +1,10 @@
+// ----------------------------------------
+// Color Values
+//
+// https://ether.thescenery.co/color/
+//
+//
+
 const colors = {
   // Layout
   dark: '#0F1D2B',

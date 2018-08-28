@@ -1,3 +1,10 @@
+// ----------------------------------------
+// Color Variables
+//
+// https://ether.thescenery.co/color/
+//
+//
+
 import colors from './colors';
 
 const colorVariables = {

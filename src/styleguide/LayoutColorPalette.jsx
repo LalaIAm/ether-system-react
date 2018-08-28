@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import colors from '../base/color/colors';
-import { ColorSwatch } from './components/ColorSwatch';
+import { ColorSwatch } from './ColorSwatch';
 
 const SwatchContainer = styled.div`
   align-content: stretch;
