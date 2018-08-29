@@ -22,7 +22,7 @@ export const SpacerList = () => {
     const [size, value] = spacerSize;
 
     return (
-      <span>
+      <span key={size}>
         <Spacer size={size} debug />
         <StyledTitle>{size}</StyledTitle>
         <StyledSubtitle>{value}</StyledSubtitle>

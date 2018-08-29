@@ -5,7 +5,7 @@ import styled from 'styled-components';
 import spacerSizes from '../../../base/spacing';
 
 export const Spacer = ({ debug, horizontal, size, ...others }) => {
-  const spacerBackground = debug ? 'pink' : 'none';
+  const spacerBackground = debug ? 'pink' : 'transparent';
   const spacerPadding = horizontal ? 'padding-right' : 'padding-bottom';
   const spacerDisplay = horizontal ? 'inline-block' : 'block';
   const spacerHeight = (horizontal && debug) ? '5px' : '0';
