@@ -22,14 +22,14 @@ export const Spacer = ({ debug, horizontal, size, ...others }) => {
   );
 };
 
-export const SpacerSizes = ['none', '2xsmall', 'xsmall', 'small', 'medium', 'large', 'xlarge', '2xlarge'];
+export const SpacerSizes = Object.keys(spacerSizes);
 
 Spacer.propTypes = {
   /** If set, adds a light background color to the spacer for debugging purposes */
   debug: PropTypes.bool,
   /** Sets to horizontal spacing mode */
   horizontal: PropTypes.bool,
-  /** Size of the spacer */
+  /** Size of the spacer. Options are 'none', '2xsmall', 'xsmall', 'small', 'medium', 'large', 'xlarge', and '2xlarge' */
   size: PropTypes.oneOf(SpacerSizes),
 };
 
