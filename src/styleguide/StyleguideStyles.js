@@ -16,9 +16,14 @@ export const StyledSpecimen = styled.p`
   margin: 0;
 `;
 
+export const StyledSpecimenTitle = styled.p`
+  color: ${colors.dark85};
+  font-size: 1.2rem;
+`;
+
 export const StyledSpecimenCSS = styled.pre`
   border-top: 1px solid ${colors.light};
-  color: ${colors.dark50};
+  color: ${colors.dark75};
   font-size: 1.2rem;
   margin: 0;
   padding-top: 15px;

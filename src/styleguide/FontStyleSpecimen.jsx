@@ -1,6 +1,11 @@
 import React, { Fragment } from 'react';
 
-import { StyledSpecimen, StyledSpecimenContainer, StyledSpecimenCSS } from './StyleguideStyles';
+import {
+  StyledSpecimen,
+  StyledSpecimenTitle,
+  StyledSpecimenContainer,
+  StyledSpecimenCSS,
+} from './StyleguideStyles';
 import { Spacer } from '../components/layout/Spacer';
 
 import fonts from '../base/typography/fonts';
@@ -9,8 +14,10 @@ export const FontStyleSpecimen = () => {
   const renderFontSpecimens = Object.keys(fonts).map(fontStyle => (
     <Fragment key={fontStyle}>
       <StyledSpecimenContainer>
+        <StyledSpecimenTitle>{fontStyle}</StyledSpecimenTitle>
         <StyledSpecimen
           contentEditable
+          suppressContentEditableWarning
           fontStyle={fontStyle}
           fontSize="size2"
         >

@@ -1,7 +1,12 @@
 import React, { Fragment } from 'react';
 
 import { Spacer } from '../components/layout/Spacer';
-import { StyledSpecimen, StyledSpecimenContainer, StyledSpecimenCSS } from './StyleguideStyles';
+import {
+  StyledSpecimen,
+  StyledSpecimenTitle,
+  StyledSpecimenContainer,
+  StyledSpecimenCSS,
+} from './StyleguideStyles';
 
 import fontSizes from '../base/typography/fontSizes';
 
@@ -9,7 +14,13 @@ export const FontSizeSpecimen = () => {
   const renderSizeSpecimens = Object.keys(fontSizes).map(fontSize => (
     <Fragment key={fontSize}>
       <StyledSpecimenContainer>
-        <StyledSpecimen fontStyle="primaryRegular" fontSize={fontSize}>{fontSize}</StyledSpecimen>
+        <StyledSpecimenTitle>{fontSize}</StyledSpecimenTitle>
+        <StyledSpecimen
+          fontStyle="primaryRegular"
+          fontSize={fontSize}
+        >
+          The quick brown fox jumped over the lazy dog.
+        </StyledSpecimen>
         <Spacer size="small" />
         <StyledSpecimenCSS>{fontSizes[fontSize]}</StyledSpecimenCSS>
       </StyledSpecimenContainer>
