@@ -1,3 +1,10 @@
+// ----------------------------------------
+// Font Styles
+//
+// https://ether.thescenery.co/typography/
+//
+//
+
 import { css } from 'styled-components';
 
 const fonts = {
