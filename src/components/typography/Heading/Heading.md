@@ -35,17 +35,12 @@
 ```
 
 ## Colors
-### Light Heading
+### Headings with custom colors
 ```js
 <Heading level={2} color="light">This is a heading</Heading>
-```
-
-### Dark Heading
-```js
+<Heading level={2} color="medium">This is a heading</Heading>
 <Heading level={2} color="dark">This is a heading</Heading>
-```
-
-### Accent Heading
-```js
 <Heading level={2} color="accent">This is a heading</Heading>
+<Heading level={2} color="danger">This is a heading</Heading>
+<Heading level={2} color="success">This is a heading</Heading>
 ```

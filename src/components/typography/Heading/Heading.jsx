@@ -23,7 +23,7 @@ export const HeadingSizes = Object.keys(headingSizes);
 Heading.propTypes = {
   /** @ignore */
   children: PropTypes.node,
-  /** Color of the Heading. Options are 'dark', 'light', and 'accent' */
+  /** Color of the Heading. Options are 'dark', 'medium', 'light', 'accent', 'danger', and 'success' */
   color: PropTypes.oneOf(HeadingColors),
   /** Hierarchy level of the Heading (ex: h3) */
   level: PropTypes.oneOf(HeadingLevels),

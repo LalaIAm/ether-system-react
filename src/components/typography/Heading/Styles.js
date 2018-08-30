@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 import typography from '../../../base/typography/typography';
-import colors from '../../../base/color/colors';
+import { semanticColors, typographicColors } from '../../../base/color/colorVariables';
 
 export const headingSizes = {
   xxlarge: typography.headingXXLarge,
@@ -14,9 +14,12 @@ export const headingSizes = {
 };
 
 export const headingColors = {
-  light: colors.light,
-  dark: colors.dark,
-  accent: colors.blue,
+  light: typographicColors.typeLight,
+  medium: typographicColors.typeMedium,
+  dark: typographicColors.typeDark,
+  accent: typographicColors.typeAccent,
+  danger: semanticColors.colorDanger,
+  success: semanticColors.colorSuccess,
 };
 
 const HeadingBase = styled.span`

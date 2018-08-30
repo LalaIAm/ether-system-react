@@ -34,7 +34,7 @@ const StyledCellColor = styled(StyledCell)`
 `;
 
 export const ColorVariableTable = () => {
-  const renderVariableRows = Object.entries(colorVariables).sort().map((variable) => {
+  const renderVariableRows = Object.entries(colorVariables).map((variable) => {
     const [name, value] = variable;
 
     return (
