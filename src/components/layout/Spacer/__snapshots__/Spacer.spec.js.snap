@@ -4,7 +4,7 @@ exports[`should match the snapshot 1`] = `<styled.div />`;
 
 exports[`should receive correct padding based on size selection 1`] = `
 .c0 {
-  background-color: none;
+  background-color: transparent;
   display: block;
   height: 0;
   padding-bottom: 36px;
@@ -18,7 +18,7 @@ exports[`should receive correct padding based on size selection 1`] = `
 
 exports[`should render inline-block if set to horizontal 1`] = `
 .c0 {
-  background-color: none;
+  background-color: transparent;
   display: inline-block;
   height: 0;
   padding-right: 23px;

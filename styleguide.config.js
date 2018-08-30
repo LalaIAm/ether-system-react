@@ -55,5 +55,9 @@ module.exports = {
       name: 'Layout Components',
       components: 'src/components/layout/**/[A-Z]*.{js,jsx}',
     },
+    {
+      name: 'Typography Components',
+      components: 'src/components/typography/**/[A-Z]*.{js,jsx}',
+    },
   ],
 };
