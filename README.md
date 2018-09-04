@@ -1,6 +1,8 @@
 # Ether: React Edition
 A React version of the Ether System libraries
 
+[![CircleCI](https://circleci.com/gh/wearethescenery/ether-system-react.svg?style=svg&circle-token=8482def59106e9768b0402426dcd6ef6a9aa3b60)](https://circleci.com/gh/wearethescenery/ether-system-react)
+
 # Setup
 **Note**: `node 8.11.4` is recommended
 
