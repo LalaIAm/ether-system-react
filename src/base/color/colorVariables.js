@@ -21,16 +21,7 @@ export const typographicColors = {
   typeSuccess: colors.green,
 };
 
-const colorVariables = {
-  // Semantic Colors
-  ...semanticColors,
-
-  // Typographic Colors
-  ...typographicColors,
-
-  // ---
-  // Button States
-  // ---
+export const buttonColors = {
   // Primary
   buttonPrimaryBackground: colors.blue,
   buttonPrimaryBackgroundHover: colors.blueDark1,
@@ -39,21 +30,38 @@ const colorVariables = {
 
   // Secondary
   buttonSecondaryBackground: colors.white,
-  buttonSecondaryBackgroundHover: colors.white,
+  buttonSecondaryBackgroundHover: colors.light90,
   buttonSecondaryBorder: colors.light110,
   buttonSecondaryColor: colors.dark,
 
   // Danger
   buttonDangerBackground: semanticColors.colorDanger,
-  buttonDangerBackgroundHover: colors.redDark,
+  buttonDangerBackgroundHover: colors.redDark1,
   buttonDangerBorder: semanticColors.colorDanger,
   buttonDangerText: colors.white,
 
   // Success
   buttonSuccessBackground: semanticColors.colorSuccess,
-  buttonSuccessBackgroundHover: colors.greenDark,
+  buttonSuccessBackgroundHover: colors.greenDark1,
   buttonSuccessBorder: semanticColors.colorSuccess,
   buttonSuccessText: colors.white,
+};
+
+const colorVariables = {
+  // Semantic Colors
+  semantic: {
+    ...semanticColors,
+  },
+
+  // Typographic Colors
+  typographic: {
+    ...typographicColors,
+  },
+
+  // Button Colors
+  buttons: {
+    ...buttonColors,
+  },
 };
 
 export default colorVariables;

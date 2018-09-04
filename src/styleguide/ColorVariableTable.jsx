@@ -1,5 +1,5 @@
 /* eslint-disable no-confusing-arrow */
-import React from 'react';
+import React, { Fragment } from 'react';
 import styled from 'styled-components';
 
 import colors from '../base/color/colors';
@@ -11,6 +11,10 @@ const StyledTable = styled.table`
   font-family: monospace;
   font-size: 13px;
   width: 100%;
+
+  &:not(last-child) {
+    margin-bottom: 40px;
+  }
 `;
 
 const StyledRow = styled.tr`
@@ -28,28 +32,45 @@ const StyledCell = styled.td`
   }
 `;
 
+const StyledHeading = styled.h2`
+  font-weight: 400;
+  font-size: 2.1rem;
+  margin-bottom: 10px;
+`;
+
 const StyledCellColor = styled(StyledCell)`
   background-color: ${p => p.color};
   color: ${p => p.color === colors.dark ? colors.white : colors.dark};
 `;
 
 export const ColorVariableTable = () => {
-  const renderVariableRows = Object.entries(colorVariables).map((variable) => {
-    const [name, value] = variable;
+  const renderVariableTables = Object.entries(colorVariables).map((category) => {
+    const [title, values] = category;
+
+    const renderCategoryValues = Object.entries(values).map((value) => {
+      const [name, colorValue] = value;
+
+      return (
+        <StyledRow key={name}>
+          <StyledCell>{name}</StyledCell>
+          <StyledCellColor color={colorValue} width="30%">{colorValue}</StyledCellColor>
+        </StyledRow>
+      );
+    });
 
     return (
-      <StyledRow key={name}>
-        <StyledCell>{name}</StyledCell>
-        <StyledCellColor color={value}>{value}</StyledCellColor>
-      </StyledRow>
+      <Fragment>
+        <StyledHeading>{title}</StyledHeading>
+        <StyledTable>
+          {renderCategoryValues}
+        </StyledTable>
+      </Fragment>
     );
   });
 
   return (
-    <StyledTable>
-      <tbody>
-        {renderVariableRows}
-      </tbody>
-    </StyledTable>
+    <Fragment>
+      {renderVariableTables}
+    </Fragment>
   );
 };

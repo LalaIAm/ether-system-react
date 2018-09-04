@@ -1,43 +1,43 @@
 import styled, { css } from 'styled-components';
 
-import colorVariables from '../../../base/color/colorVariables';
+import { buttonColors } from '../../../base/color/colorVariables';
 import fontSizes from '../../../base/typography/fontSizes';
 
 export const buttonModes = {
   primary: css`
-    background-color: ${colorVariables.buttonPrimaryBackground};
-    border: 1px solid ${colorVariables.buttonPrimaryBorder};
-    color: ${colorVariables.buttonPrimaryText};
+    background-color: ${buttonColors.buttonPrimaryBackground};
+    border: 1px solid ${buttonColors.buttonPrimaryBorder};
+    color: ${buttonColors.buttonPrimaryText};
 
     &:hover {
-      background-color: ${colorVariables.buttonPrimaryBackgroundHover};
+      background-color: ${buttonColors.buttonPrimaryBackgroundHover};
     }
   `,
   secondary: css`
-    background-color: ${colorVariables.buttonSecondaryBackground};
-    border: 1px solid ${colorVariables.buttonSecondaryBorder};
-    color: ${colorVariables.buttonSecondaryText};
+    background-color: ${buttonColors.buttonSecondaryBackground};
+    border: 1px solid ${buttonColors.buttonSecondaryBorder};
+    color: ${buttonColors.buttonSecondaryText};
 
     &:hover {
-      background-color: ${colorVariables.buttonSecondaryBackgroundHover};
+      background-color: ${buttonColors.buttonSecondaryBackgroundHover};
     }
   `,
   danger: css`
-    background-color: ${colorVariables.buttonDangerBackground};
-    border: 1px solid ${colorVariables.buttonDangerBorder};
-    color: ${colorVariables.buttonDangerText};
+    background-color: ${buttonColors.buttonDangerBackground};
+    border: 1px solid ${buttonColors.buttonDangerBorder};
+    color: ${buttonColors.buttonDangerText};
 
     &:hover {
-      background-color: ${colorVariables.buttonDangerBackgroundHover};
+      background-color: ${buttonColors.buttonDangerBackgroundHover};
     }
   `,
   success: css`
-    background-color: ${colorVariables.buttonSuccessBackground};
-    border: 1px solid ${colorVariables.buttonSuccessBorder};
-    color: ${colorVariables.buttonSuccessText};
+    background-color: ${buttonColors.buttonSuccessBackground};
+    border: 1px solid ${buttonColors.buttonSuccessBorder};
+    color: ${buttonColors.buttonSuccessText};
 
     &:hover {
-      background-color: ${colorVariables.buttonSuccessBackgroundHover};
+      background-color: ${buttonColors.buttonSuccessBackgroundHover};
     }
   `,
 };
