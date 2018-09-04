@@ -52,7 +52,7 @@ Take a look around. Provide feedback! Let us know what you think. Open a PR. Cre
 * `npm build` will compile components into the `lib/` directory.
 
 # External Use
-* `npm link ../path/to/ether-system-react` to allow for importing into any other project.
+* `npm link ../path/to/ether-system-react` from your project directory to link to a local copy of `ether-system-react`.
 ```jsx
 // import individual components and libraries like so
 import { Button, Heading, Spacer, colors, colorVariables } from 'ether-system-react';
