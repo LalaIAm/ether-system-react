@@ -20,6 +20,8 @@ const StyleGuideHeader = () => (
     <Spacer />
     <HeaderLink href="https://ether.thescenery.co">&larr; Back to the Ether site</HeaderLink>
     <Spacer size="small" />
+    <HeaderLink href="https://github.com/wearethescenery/ether-system-react">&larr; Github</HeaderLink>
+    <Spacer size="small" />
   </Fragment>
 );
 
