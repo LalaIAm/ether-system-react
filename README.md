@@ -9,15 +9,15 @@ This project is meant to be a bootstrap of sorts to get your design system proje
 
 `ether-system-react` is built and styled using `styled-components`. For more information, please see the [Styled Components](https://www.styled-components.com/) website.
 
-# Structure
+## Structure
 The meat of this project exists inside the `src` directory. The `src/base` folder holds variables which generate Spacing, Color, and Typography values. `src/components` houses sample components (with documentation and tests) showing how to implement our Ether values. `src/styleguide` are custom components for working with Styleguidist to display Ether values in an easy-to-understand fashion.
 
-# How to Use
+## How to Use
 Currently, Ether is not an `npm` module. It's more of a how-to. Eventually, this will change as the project matures.
 
 Even so, this project has build scripts so it can be `npm link`ed to any other project. Go ahead! Use Ether as a dependency. It works pretty dang well.
 
-# Included and Exported Components
+## Included and Exported Components
 As of this writing, the currently available components and tools are:
 
 | Name | Category | Description
@@ -33,7 +33,7 @@ As of this writing, the currently available components and tools are:
 | `fontSizes` | library | generated font sizes from base values. Used in all Typography components. Responsive.
 | `typography` | library | object containing all available font styles for use within Typography components. Responsive.
 
-# A Note on Custom Fonts
+## A Note on Custom Fonts
 While custom fonts are referenced in the styles and displayed inside Styleguidist, you must host your own fonts or add the custom font service CSS to your project to see custom fonts set in your Ether implementation. For example, Ether is using [Open Sans](https://fonts.google.com/specimen/Open+Sans) with weights **300**, **400**, and **700** from Google Fonts. Add the following CSS stylesheet link to your project to view the correct font:
 
 ```html
@@ -44,24 +44,24 @@ While custom fonts are referenced in the styles and displayed inside Styleguidis
 </head>
 ```
 
-# Feedback
+## Feedback
 Take a look around. Provide feedback! Let us know what you think. Open a PR. Create an issue. Fork it to use for your own project! Ether is a work in progress that we use internally, so things will be improved over time.
 
-# Setup
+## Setup
 **Note**: `node 8.11.4` is recommended and an `.nvmrc` file is included for those using `nvm`.
 
 * `npm i` will install all dependencies
 
-# Development
+## Development
 
 * `npm start` will run React Styleguidist at [localhost:6060](http://localhost:6060)
 * `npm run styleguide:build` will create a static version for serving
 * `npm test` to run `jest`
 
-# Build
+## Build
 * `npm build` will compile components into the `lib/` directory.
 
-# External Use
+## External Use
 * `npm link ../path/to/ether-system-react` from your project directory to link to a local copy of `ether-system-react`.
 ```jsx
 // import individual components and libraries like so
