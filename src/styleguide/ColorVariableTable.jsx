@@ -59,10 +59,12 @@ export const ColorVariableTable = () => {
     });
 
     return (
-      <Fragment>
+      <Fragment key={title}>
         <StyledHeading>{title}</StyledHeading>
         <StyledTable>
-          {renderCategoryValues}
+          <tbody>
+            {renderCategoryValues}
+          </tbody>
         </StyledTable>
       </Fragment>
     );
