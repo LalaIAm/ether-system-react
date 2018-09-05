@@ -10,7 +10,9 @@ This project is meant to be a bootstrap of sorts to get your design system proje
 `ether-system-react` is built and styled using `styled-components`. For more information, please see the [Styled Components](https://www.styled-components.com/) website.
 
 ## Structure
-The meat of this project exists inside the `src` directory. The `src/base` folder holds variables which generate Spacing, Color, and Typography values. `src/components` houses sample components (with documentation and tests) showing how to implement our Ether values. `src/styleguide` are custom components for working with Styleguidist to display Ether values in an easy-to-understand fashion.
+The meat of this project exists inside the `src` directory. The `src/base` folder holds variables which generate Spacing, Color, and Typography values. `src/components` houses sample components (with documentation and tests) showing how to implement our Ether values.
+
+`styleguide-ui/` contains custom components for working with Styleguidist to display Ether values in an easy-to-understand fashion.
 
 ## How to Use
 Currently, Ether is not an `npm` module. It's more of a how-to. Eventually, this will change as the project matures.
