@@ -33,6 +33,16 @@ As of this writing, the currently available components and tools are:
 | `fontSizes` | library | generated font sizes from base values. Used in all Typography components. Responsive.
 | `typography` | library | object containing all available font styles for use within Typography components. Responsive.
 
+# A Note on Custom Fonts
+While custom fonts are referenced in the styles and displayed inside Styleguidist, you must host your own fonts or add the custom font service CSS to your project to see custom fonts set in your Ether implementation. For example, Ether is using [Open Sans](https://fonts.google.com/specimen/Open+Sans) with weights **300**, **400**, and **700** from Google Fonts. Add the following CSS stylesheet link to your project to view the correct font:
+
+```html
+<head>
+  ...
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+  ...
+</head>
+```
 
 # Feedback
 Take a look around. Provide feedback! Let us know what you think. Open a PR. Create an issue. Fork it to use for your own project! Ether is a work in progress that we use internally, so things will be improved over time.
