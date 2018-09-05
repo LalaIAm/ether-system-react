@@ -17,7 +17,7 @@ Currently, Ether is not an `npm` module. It's more of a how-to. Eventually, this
 
 Even so, this project has build scripts so it can be `npm link`ed to any other project. Go ahead! Use Ether as a dependency. It works pretty dang well.
 
-## Included and Exported Components
+## Included Components, Utilities, and Libraries
 As of this writing, the currently available components and tools are:
 
 | Name | Category | Description
@@ -26,12 +26,13 @@ As of this writing, the currently available components and tools are:
 | `Heading` | component | Typographic component to utilize the heading `fontStyle` values
 | `Paragraph` | component | Typographic component to utilize the body `fontStyle` values
 | `Spacer` | component | Layout component which utilizes the `spacer` values. Responsive too!
-| `mediaQueries` | utility | object which outputs styled-components css `@media` wrappers generated from set breakpoints
+| `mediaQueries` | utility | object which outputs `styled-components` CSS `@media` wrappers generated from set breakpoints
 | `spacerSizes` | library | object containing all spacer size values. Used by `Spacer`.
 | `colors` | library | object containing core color values and names. Typically, these values aren't used directly. Please add them to `colorVariables` for use if needed.
 | `colorVariables` | library | object containing variables mapped to color library values
+| `fonts` | library | generated font family/style/weight CSS for use within `styled-components`
 | `fontSizes` | library | generated font sizes from base values. Used in all Typography components. Responsive.
-| `typography` | library | object containing all available font styles for use within Typography components. Responsive.
+| `typography` | library | object containing all available font styles for use within Typography components. Outputs `styled-component` CSS. Responsive.
 
 ## A Note on Custom Fonts
 While custom fonts are referenced in the styles and displayed inside Styleguidist, you must host your own fonts or add the custom font service CSS to your project to see custom fonts set in your Ether implementation. For example, Ether is using [Open Sans](https://fonts.google.com/specimen/Open+Sans) with weights **300**, **400**, and **700** from Google Fonts. Add the following CSS stylesheet link to your project to view the correct font:
