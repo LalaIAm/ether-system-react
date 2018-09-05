@@ -43,8 +43,8 @@ module.exports = {
       description: 'Typography samples and variations',
     },
     {
-      name: 'Spacers',
-      content: 'docs/spacers.md',
+      name: 'Spacing',
+      content: 'docs/spacing.md',
       description: 'The Ether Spacing System',
     },
     {
