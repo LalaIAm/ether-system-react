@@ -6,7 +6,7 @@ import spacerSizes from '../base/spacing';
 import colors from '../base/color/colors';
 
 const StyledTitle = styled.span`
-  color: ${colors.dark};
+  color: ${colors.black};
   display: inline-block;
   font-size: 11px;
   font-weight: 700;

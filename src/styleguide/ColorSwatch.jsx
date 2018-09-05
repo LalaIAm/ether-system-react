@@ -12,17 +12,19 @@ const StyledSwatch = styled.div`
 `;
 
 const StyledTitle = styled.span`
-  background-color: ${colors.white};
-  color: ${colors.dark};
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 3px;
+  color: ${colors.black};
   display: inline-block;
   font-size: 11px;
   font-weight: 700;
   margin-bottom: 5px;
-  padding: 8px;
+  padding: 3px;
 `;
 
 const StyledSubtitle = styled(StyledTitle)`
-  font-size: 10px;
+  font-family: monospace;
+  font-size: 12px;
 `;
 
 export const ColorSwatch = ({ height, name, value }) => {

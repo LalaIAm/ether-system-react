@@ -6,8 +6,9 @@ import colors from '../base/color/colors';
 import colorVariables from '../base/color/colorVariables';
 
 const StyledTable = styled.table`
+  border-bottom: 1px solid ${colors.gray30};
   border-collapse: collapse;
-  color: ${colors.dark};
+  color: ${colors.black};
   font-family: monospace;
   font-size: 13px;
   width: 100%;
@@ -19,12 +20,12 @@ const StyledTable = styled.table`
 
 const StyledRow = styled.tr`
   &:nth-of-type(odd) {
-    background-color: ${colors.light90};
+    background-color: ${colors.gray15};
   }
 `;
 
 const StyledCell = styled.td`
-  border-top: 1px solid ${colors.light};
+  border-top: 1px solid ${colors.gray30};
   padding: 10px;
 
   &:nth-of-type(even) {
@@ -40,7 +41,14 @@ const StyledHeading = styled.h2`
 
 const StyledCellColor = styled(StyledCell)`
   background-color: ${p => p.color};
-  color: ${p => p.color === colors.dark ? colors.white : colors.dark};
+  color: ${p => p.color === colors.black ? colors.white : colors.black};
+`;
+
+const StyledCellColorSpan = styled.span`
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 3px;
+  display: inline-block;
+  padding: 3px;
 `;
 
 export const ColorVariableTable = () => {
@@ -53,7 +61,11 @@ export const ColorVariableTable = () => {
       return (
         <StyledRow key={name}>
           <StyledCell>{name}</StyledCell>
-          <StyledCellColor color={colorValue} width="30%">{colorValue}</StyledCellColor>
+          <StyledCellColor color={colorValue} width="30%">
+            <StyledCellColorSpan>
+              {colorValue}
+            </StyledCellColorSpan>
+          </StyledCellColor>
         </StyledRow>
       );
     });

@@ -7,13 +7,14 @@
 
 const colors = {
   // Layout
-  dark: '#0F1D2B',
-  dark85: '#3F4F5F',
-  dark75: '#5B6B7C',
-  dark50: '#91A3B0',
-  light110: '#B6C7D4',
-  light: '#E2EAF0',
-  light90: '#EFF4F8',
+  black: '#0F1D2B',
+  gray85: '#3F4F5F',
+  gray70: '#5B6B7C',
+  gray50: '#91A3B0',
+  gray40: '#B6C7D4',
+  gray30: '#E2EAF0',
+  gray15: '#EFF4F8',
+  gray10: '#F8FAFB',
   white: '#FFFFFF',
 
   // Core

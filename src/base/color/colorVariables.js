@@ -13,9 +13,9 @@ export const semanticColors = {
 };
 
 export const typographicColors = {
-  typeLight: colors.light,
-  typeMedium: colors.dark50,
-  typeDark: colors.dark,
+  typeLight: colors.gray30,
+  typeMedium: colors.gray50,
+  typeDark: colors.black,
   typeAccent: colors.blue,
   typeDanger: colors.red,
   typeSuccess: colors.green,
@@ -30,9 +30,9 @@ export const buttonColors = {
 
   // Secondary
   buttonSecondaryBackground: colors.white,
-  buttonSecondaryBackgroundHover: colors.light90,
-  buttonSecondaryBorder: colors.light110,
-  buttonSecondaryColor: colors.dark,
+  buttonSecondaryBackgroundHover: colors.gray15,
+  buttonSecondaryBorder: colors.gray40,
+  buttonSecondaryColor: colors.black,
 
   // Danger
   buttonDangerBackground: semanticColors.colorDanger,
