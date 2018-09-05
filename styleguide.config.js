@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   components: 'src/components/**/[A-Z]*.{js,jsx,ts,tsx}', // skips index.js
   ignore: ['**/**/Styles.{js,jsx,ts,tsx}', '**/*.spec.{js,jsx,ts,tsx}'],
@@ -20,6 +22,9 @@ module.exports = {
         fontSize: '1.4rem',
       },
     },
+  },
+  styleguideComponents: {
+    LogoRenderer: path.join(__dirname, './src/styleguide/StyleGuideHeader'),
   },
   pagePerSection: true,
   sections: [
