@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import colors from '../base/color/colors';
+import colors from '../src/base/color/colors';
 import { ColorSwatch } from './ColorSwatch';
 
 const SwatchContainer = styled.div`

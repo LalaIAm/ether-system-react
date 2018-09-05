@@ -6,9 +6,9 @@ import {
   StyledSpecimenContainer,
   StyledSpecimenCSS,
 } from './StyleguideStyles';
-import { Spacer } from '../components/layout/Spacer';
+import { Spacer } from '../src/components/layout/Spacer';
 
-import fonts from '../base/typography/fonts';
+import fonts from '../src/base/typography/fonts';
 
 export const FontStyleSpecimen = () => {
   const renderFontSpecimens = Object.keys(fonts).map(fontStyle => (

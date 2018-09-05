@@ -2,8 +2,8 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 
-import colors from '../base/color/colors';
-import colorVariables from '../base/color/colorVariables';
+import colors from '../src/base/color/colors';
+import colorVariables from '../src/base/color/colorVariables';
 
 const StyledTable = styled.table`
   border-bottom: 1px solid ${colors.gray30};

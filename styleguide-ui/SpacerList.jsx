@@ -1,9 +1,9 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 
-import { Spacer } from '../components/layout/Spacer';
-import spacerSizes from '../base/spacing';
-import colors from '../base/color/colors';
+import { Spacer } from '../src/components/layout/Spacer';
+import spacerSizes from '../src/base/spacing';
+import colors from '../src/base/color/colors';
 
 const StyledTitle = styled.span`
   color: ${colors.black};

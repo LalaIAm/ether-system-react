@@ -2,12 +2,12 @@ Located at: [/src/base/typography/typography.js](https://github.com/wearethescen
 
 ## Font Styles
 ```js noeditor
-const { FontStyleSpecimen } = require('../src/styleguide/FontStyleSpecimen');
+const { FontStyleSpecimen } = require('../styleguide-ui/FontStyleSpecimen');
 <FontStyleSpecimen />
 ```
 
 ## Font Sizes
 ```js noeditor
-const { FontSizeSpecimen } = require('../src/styleguide/FontSizeSpecimen');
+const { FontSizeSpecimen } = require('../styleguide-ui/FontSizeSpecimen');
 <FontSizeSpecimen />
 ```

@@ -24,8 +24,9 @@ module.exports = {
     },
   },
   styleguideComponents: {
-    LogoRenderer: path.join(__dirname, './src/styleguide/StyleGuideHeader'),
+    LogoRenderer: path.join(__dirname, './styleguide-ui/StyleGuideHeader'),
   },
+  styleguideDir: 'demo',
   pagePerSection: true,
   sections: [
     {

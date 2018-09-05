@@ -56,11 +56,11 @@ Take a look around. Provide feedback! Let us know what you think. Open a PR. Cre
 ## Development
 
 * `npm start` will run React Styleguidist at [localhost:6060](http://localhost:6060)
-* `npm run styleguide:build` will create a static version for serving
 * `npm test` to run `jest`
 
 ## Build
 * `npm build` will compile components into the `lib/` directory.
+* `npm run styleguide:build` will create a static version for serving inside the `demo/` directory
 
 ## External Use
 * `npm link ../path/to/ether-system-react` from your project directory to link to a local copy of `ether-system-react`.

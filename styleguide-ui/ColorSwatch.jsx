@@ -3,7 +3,7 @@ import React from 'react';
 import styled from 'styled-components';
 import Color from 'color';
 
-import colors from '../base/color/colors';
+import colors from '../src/base/color/colors';
 
 const StyledSwatch = styled.div`
   box-sizing: border-box;

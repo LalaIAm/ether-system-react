@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
-import fonts from '../base/typography/fonts';
-import fontSizes from '../base/typography/fontSizes';
-import colors from '../base/color/colors';
+import fonts from '../src/base/typography/fonts';
+import fontSizes from '../src/base/typography/fontSizes';
+import colors from '../src/base/color/colors';
 
 export const StyledSpecimenContainer = styled.div`
   border: 1px solid ${colors.gray30};

@@ -1,6 +1,6 @@
 import React, { Fragment } from 'react';
 
-import { Spacer } from '../components/layout/Spacer';
+import { Spacer } from '../src/components/layout/Spacer';
 import {
   StyledSpecimen,
   StyledSpecimenTitle,
@@ -8,7 +8,7 @@ import {
   StyledSpecimenCSS,
 } from './StyleguideStyles';
 
-import fontSizes from '../base/typography/fontSizes';
+import fontSizes from '../src/base/typography/fontSizes';
 
 export const FontSizeSpecimen = () => {
   const renderSizeSpecimens = Object.keys(fontSizes).map(fontSize => (

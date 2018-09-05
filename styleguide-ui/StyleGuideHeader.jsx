@@ -1,11 +1,11 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
 
-import { Heading } from '../components/typography/Heading';
-import { Spacer } from '../components/layout/Spacer';
+import { Heading } from '../src/components/typography/Heading';
+import { Spacer } from '../src/components/layout/Spacer';
 
-import fonts from '../base/typography/fonts';
-import colors from '../base/color/colors';
+import fonts from '../src/base/typography/fonts';
+import colors from '../src/base/color/colors';
 
 const HeaderLink = styled.a`
   ${fonts.primaryRegular};

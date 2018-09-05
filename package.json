@@ -11,7 +11,7 @@
     "prepublish": "npm run build",
     "start": "npm run styleguide",
     "styleguide": "styleguidist server",
-    "styleguide:build": "rimraf ./styleguide && styleguidist build",
+    "styleguide:build": "rimraf ./demo && styleguidist build",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage"
