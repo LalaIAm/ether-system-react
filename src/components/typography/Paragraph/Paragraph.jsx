@@ -3,11 +3,12 @@ import React from 'react';
 
 import { StyledParagraph, paragraphSizes, paragraphColors } from './Styles';
 
-export const Paragraph = ({ children, color, noMargin, size }) => (
+export const Paragraph = ({ children, color, noMargin, size, ...others }) => (
   <StyledParagraph
     color={color}
     noMargin={noMargin}
     size={size}
+    {...others}
   >
     {children}
   </StyledParagraph>
