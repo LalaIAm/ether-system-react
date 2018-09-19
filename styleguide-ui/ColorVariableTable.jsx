@@ -51,6 +51,14 @@ const StyledCellColorSpan = styled.span`
   padding: 3px;
 `;
 
+const getMatchingVariableName = (colorValue) => {
+  const matchingValue = Object.entries(colors).find(([, value]) => (
+    value === colorValue
+  ));
+
+  return matchingValue[0]; // this is the name of the variable
+};
+
 export const ColorVariableTable = () => {
   const renderVariableTables = Object.entries(colorVariables).map((category) => {
     const [title, values] = category;
@@ -63,7 +71,7 @@ export const ColorVariableTable = () => {
           <StyledCell>{name}</StyledCell>
           <StyledCellColor color={colorValue} width="30%">
             <StyledCellColorSpan>
-              {colorValue}
+              {getMatchingVariableName(colorValue)}
             </StyledCellColorSpan>
           </StyledCellColor>
         </StyledRow>
