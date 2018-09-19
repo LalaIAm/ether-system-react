@@ -2,6 +2,8 @@
 
 <a href="https://codeclimate.com/github/wearethescenery/ether-system-react/maintainability"><img src="https://api.codeclimate.com/v1/badges/a5d45be2a522c1a27ecb/maintainability" /></a>
 
+**Demo**: [https://ether.thescenery.co/demo/](https://ether.thescenery.co/demo/)
+
 # Ether: A Modular Base for Any Design System
 [Ether](https://ether.thescenery.co) is not a design system&mdash;it's a base for any design system to be built upon. It follows [The Scenery's](https://thescenery.co/) opinionated structure on how a design system should be built, focusing on the ability to easily scale and expand over time.
 
