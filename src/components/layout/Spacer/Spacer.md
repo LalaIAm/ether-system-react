@@ -5,7 +5,7 @@
 
 ### Horizontal Spacer
 ```js
-const { Button } = require('../../input/Button/Button.jsx');
+const { Button } = require('../../input/Button/Button');
 <span>
   <Button>Button 1</Button>
   <Spacer horizontal debug size="large" />
