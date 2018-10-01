@@ -4,5 +4,4 @@ compiled
 config
 coverage
 lib
-.storybook
 webpack.*
