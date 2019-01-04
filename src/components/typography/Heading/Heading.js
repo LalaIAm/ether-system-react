@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { headingSizes, headingColors, headingElements } from './Styles';
+import { headingSizes, headingColors, headingElements } from './Heading.styles';
 
 export const Heading = ({ children, color, level, size, ...others }) => {
   const HeadingElement = headingElements[`h${level}`];

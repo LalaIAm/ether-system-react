@@ -2,7 +2,7 @@ const path = require('path');
 
 module.exports = {
   components: 'src/components/**/[A-Z]*.{js,jsx,ts,tsx}', // skips index.js
-  ignore: ['**/**/Styles.{js,jsx,ts,tsx}', '**/*.spec.{js,jsx,ts,tsx}'],
+  ignore: ['**/**/*.styles.{js,jsx,ts,tsx}', '**/*.spec.{js,jsx,ts,tsx}'],
   template: {
     head: {
       links: [

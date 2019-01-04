@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { StyledButton, buttonModes, buttonSizes } from './Styles';
+import { StyledButton, buttonModes, buttonSizes } from './Button.styles';
 
 export const Button = ({ children, mode, onClick, size }) => (
   <StyledButton

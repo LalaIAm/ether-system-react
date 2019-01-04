@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types';
 import React from 'react';
 
-import { StyledParagraph, paragraphSizes, paragraphColors } from './Styles';
+import { StyledParagraph, paragraphSizes, paragraphColors } from './Paragraph.styles';
 
 export const Paragraph = ({ children, color, noMargin, size, ...others }) => (
   <StyledParagraph
