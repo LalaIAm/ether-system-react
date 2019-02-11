@@ -55,7 +55,7 @@ While custom fonts are referenced in the styles and displayed inside Styleguidis
 Take a look around. Provide feedback! Let us know what you think. Open a PR. Create an issue. Fork it to use for your own project! Ether is a work in progress that we use internally, so things will be improved over time.
 
 ## Setup
-**Note**: `node 8.11.4` is recommended and an `.nvmrc` file is included for those using `nvm`.
+**Note**: `node 10.15.1` is recommended and an `.nvmrc` file is included for those using `nvm`.
 
 * `npm i` will install all dependencies
 
