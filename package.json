@@ -1,6 +1,6 @@
 {
   "name": "ether-system-react",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A React version of the Ether System libraries",
   "main": "index.js",
   "private": true,
